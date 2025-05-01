@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Remind Me",
+    "slug": "remindme","scheme": "remindme",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.biplabroy.remindme",
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.biplabroy.remindme"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "devs": {
+      "lead": "401 - Unauthorised"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/schedule_notification.ogg",
+            "./assets/alarm.ogg"
+          ]
+        }
+      ],
+      "expo-secure-store"
+    ]
+  }
+}
